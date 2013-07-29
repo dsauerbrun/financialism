@@ -1,0 +1,87 @@
+from django.db import models
+
+class Company(models.Model):
+	name = models.CharField(max_length=100)
+	symbol = models.CharField(max_length=7)
+
+# Create your models here.
+class Annual(models.Model):
+	company = models.ForeignKey(Company)
+	year = models.IntegerField()
+	net_sales = models.IntegerField()
+	Cost_of_sales
+	Gross_margin
+	Research_and_development
+	Selling,_general_and_administrative
+	Depreciation_and_amortization
+	Share-based_compensation_expense
+	Deferred_income_tax_expense
+	Total_operating_expenses
+	Operating_income
+	Investment_Income,_Non-operating
+	Interest_Income,_Non-operating
+	Other_income/(expense),_net
+	Other,_net
+	Income_Before_Tax
+	Income_Tax_-_Total
+	Income_After_Tax
+	Net_Income_Before_Extraordinary_Items
+	Net_Income
+	Cash_and_cash_equivalents
+	Short-term_marketable_securities
+	Accounts_receivable
+	Inventories
+	Deferred_tax_assets
+	Vendor_non-trade_receivables
+	Other_current_assets
+	Total_current_assets
+	Long-term_marketable_securities
+	Property,_plant_and_equipment,_net
+	Goodwill
+	Acquired_intangible_assets,_net
+	Other_assets
+	Total_assets
+	Accrued_expenses
+	Total_current_liabilities
+	Deferred_revenue_-_non-current
+	Other_non-current_liabilities
+	Total_liabilities
+	Commitments_and_contingencies
+	Total_Common_Shares_Outstanding
+	Retained_earnings
+	Accumulated_other_comprehensive_income
+	Total_shareholders’_equity
+	Total_liabilities_and_shareholders’_equity
+	Components_of_comprehensive_income:
+	Change_in_foreign_currency_translation
+	Change_in_unrealized_gains/losses_on_marketable_securities,_net_of_tax
+	Change_in_unrecognized_gains/losses_on_derivative_instruments,_net_of_tax
+	Total_comprehensive_income
+	Dividends_and_dividend_equivalent_rights_declared
+	Share-based_compensation
+	Common_stock_issued_under_stock_plans,_net_of_shares_withheld_for_employee_taxes
+	Tax_benefit_from_equity_awards,_including_transfer_pricing_adjustments
+	Cash_and_cash_equivalents,_beginning_of_the_year
+	Accounts_receivable,_net
+	Other_current_and_non-current_assets
+	Accounts_payable
+	Deferred_revenue
+	Other_current_and_non-current_liabilities
+	Cash_generated_by_operating_activities
+	Purchases_of_marketable_securities
+	Proceeds_from_maturities_of_marketable_securities
+	Proceeds_from_sales_of_marketable_securities
+	Payments_made_in_connection_with_business_acquisitions,_net_of_cash_acquired
+	Payments_for_acquisition_of_property,_plant_and_equipment
+	Payments_for_acquisition_of_intangible_assets
+	Cash_used_in_investing_activities
+	Proceeds_from_issuance_of_common_stock
+	Excess_tax_benefits_from_equity_awards
+	Dividends_and_dividend_equivalent_rights_paid
+	Taxes_paid_related_to_net_share_settlement_of_equity_awards
+	Cash_(used_in)/generated_by_financing_activities
+	Increase/(decrease)_in_cash_and_cash_equivalents
+	Cash_and_cash_equivalents,_end_of_the_year
+	net_cash_paid_for_income_taxes
+
+	
